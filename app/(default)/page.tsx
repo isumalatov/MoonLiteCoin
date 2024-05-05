@@ -13,7 +13,7 @@ export default function Home() {
         <div className="px-4 sm:px-6">
           <PageHeader
             className="mb-12"
-            title="Welcome to Moon LiteCoin Free LiteCoin Faucet"
+            title="Welcome to Moon Litecoin Free Litecoin Faucet"
             description="Please, enter your Mooner email below to get started"
           >
             Login to start earning

@@ -32,7 +32,7 @@ export default function Header() {
               <ul className="flex items-center sm:gap-x-3 text-sm font-medium">
                 <li>
                   <p className="font-bold text-xl text-gray-800 dark:text-gray-200 rounded-lg py-1.5 px-3">
-                    Moon <span className="text-slate-500">LiteCoin</span>
+                    Moon <span className="text-slate-500">Litecoin</span>
                   </p>
                 </li>
               </ul>
