@@ -1,11 +1,16 @@
+"use client";
 import Image from "next/image";
 import Avatar01 from "@/public/images/dogecoin.jpg";
 import Avatar02 from "@/public/images/bnb.jpg";
 import Avatar03 from "@/public/images/bitcoin.jpg";
 import Avatar04 from "@/public/images/litecoin.jpg";
 import Avatar05 from "@/public/images/dash.jpg";
+import React from "react";
+import { useRouter } from "next/navigation";
 
 export default function SubscribeForm() {
+  const router = useRouter();
+
   return (
     <>
       <div className="relative flex items-center justify-center gap-10 before:h-px before:w-full before:border-b before:[border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.8),transparent)1] dark:before:[border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.16),transparent)1] before:shadow-sm before:shadow-white/20 dark:before:shadow-none after:h-px after:w-full after:border-b after:[border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.8),transparent)1] dark:after:[border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.16),transparent)1] after:shadow-sm after:shadow-white/20 dark:after:shadow-none mb-11">
@@ -42,7 +47,10 @@ export default function SubscribeForm() {
                 </div>
               </div>
               <div>
-                <button className="btn text-gray-100 bg-gray-900 hover:bg-gray-800 dark:text-gray-800 dark:bg-gray-100 dark:hover:bg-white w-full">
+                <button
+                  className="btn text-gray-100 bg-gray-900 hover:bg-gray-800 dark:text-gray-800 dark:bg-gray-100 dark:hover:bg-white w-full"
+                  onClick={() => router.push("/claim")}
+                >
                   Sign In
                 </button>
               </div>
